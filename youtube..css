@@ -1,0 +1,48 @@
+@-moz-document domain("www.youtube.com") {
+  #super-title {
+      display: none !important;
+  }
+
+  #comment-teaser {
+      display: none !important;
+  }
+
+
+  #info {
+      display: none !important;
+  }
+
+  #above-the-fold {
+      position: relative !important;
+  }
+
+  #actions {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+      margin: 0;
+  }
+
+  h1 .style-scope.ytd-watch-metadata {
+      line-height: 40px !important;
+      width: calc(100% - 380px);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: block;
+      white-space: nowrap;
+      font-size: 90%;
+  }
+
+  #description-content > yt-formatted-string > span:nth-child(4) {
+      font-size: 0px;
+  }
+
+  #description-content > yt-formatted-string > span:nth-child(4)::after {
+      content: '\A';
+  }
+
+
+  html.efyt-control-bar-position-absolute ytd-watch-flexy[theater] #columns.ytd-watch-flexy, html.efyt-control-bar-position-absolute ytd-watch-flexy:not([theater]) #columns #primary #alerts.ytd-watch-flexy:not(:empty), html.efyt-control-bar-position-absolute ytd-watch-flexy:not([theater]) #columns #primary #messages.ytd-watch-flexy:not(:empty), html.efyt-control-bar-position-absolute ytd-watch-flexy:not([theater]) #columns #primary #clarify-box.ytd-watch-flexy:not(:empty), html.efyt-control-bar-position-absolute ytd-watch-flexy:not([theater]) #columns #primary #info.ytd-watch-flexy {
+      padding-top: 0;
+  }
+}
